@@ -144,7 +144,7 @@ async function sewQueen () {
         if (Raviya.AUTOBIO == 'true') {
             var timezone_bio = await Pach.timezone(CdSew.user.jid)
             var date_bio = await Pach.datebio(Raviya.LANG)
-            const biography = '📅 ' + date_bio + '\n⌚ ' + timezone_bio + '\n ' + Raviya.ABT +' \n ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+            const biography = '📅 ' + date_bio + '\n⌚ ' + timezone_bio + '\n ' + Raviya.ABT +' \n ᴘᴏᴡᴇʀᴅ ʙʏ ᴡɪᴋᴜᴍ ᴋᴀʟʜᴀʀᴀ'
             await CdSew.setStatus(biography)
         }
     }, 7890);
@@ -382,7 +382,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ᴡɪᴋᴜᴍ ᴋᴀʟʜᴀʀᴀ'});
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
